@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap");
+
+.comentarios {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.comentarios * {
+	margin: 10px;
+}
+
+.comentarios form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: start;
+	align-items: center;
+}
+
+.secao-usuarios {
+	display: flex;
+	flex-direction: column;
+}
+
+.foto-nome {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0;
+}
+
+.comentarios textarea {
+	width: 60%;
+	height: 60px;
+	outline: 0;
+	border: 1px solid #004998;
+	resize: none;
+	border-radius: 20px;
+	padding: 15px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.comentarios button {
+	width: 10%;
+	height: 70px;
+	cursor: pointer;
+	border-radius: 4px;
+	border: 1px solid #2f5169;
+	margin: 0 auto;
+	color: black;
+	border-radius: 20px;
+	font-family: "dm sans", "montserrat", Arial, Helvetica, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.comentarios button:hover {
+	background: lightgray;
+	transition: 200ms;
+}
+
+.comentario-feito {
+	background: white;
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid #2f5169;
+	border-radius: 20px;
+	box-shadow: 2px 4px 6px #2f5169;
+}
+
+.comentario-feito span {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+#btn-ion {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3vw;
+}
+
+/* COMENTÁRIOS
+*
+	AVALIAÇÕES
+*/
+
+.estrelas {
+	display: flex;
+	align-items: center;
+}
+
+.estrelas * {
+	margin: 2px;
+}
+
+.estrelas input[type="radio"] {
+	display: none;
+}
+
+.estrelas label {
+	cursor: pointer;
+}
+
+.estrelas label i.fa:before {
+	content: "\f006";
+	font-size: 32px;
+	color: gold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000;
+	-moz-text-stroke-width: 1px;
+	-moz-text-stroke-color: #000;
+	-ms-text-stroke-width: 1px;
+	-ms-text-stroke-color: #000;
+	-o-text-stroke-width: 1px;
+	-o-text-stroke-color: #000;
+}
+
+.estrelas input[type="radio"]:checked ~ label i.fa:before {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+#form-estrela {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-wrap: wrap;
+}
+
+#avaliar {
+	font-size: 16px;
+	font-family: "montserrat";
+	background: #004998;
+	color: white;
+	cursor: pointer;
+	margin: 0 auto;
+	width: 30%;
+	height: 40px;
+	border: 1px solid #2f5169;
+	border-radius: 20px;
+}
+
+#avaliar:hover {
+	background: #2f5169;
+}
+
+@media (max-width: 500px) {
+	.comentarios textarea {
+		font-size: 12px;
+	}
+	.estrelas label i.fa:before {
+		content: "\f006";
+		font-size: 24px;
+	}
+	.estrelas {
+		display: flex;
+		align-items: center;
+	}
+	#form-estrela {
+		height: 100px;
+		justify-content: center;
+	}
+	#avaliar {
+		font-size: 14px;
+		width: 70%;
+		height: 40px;
+	}
+	#btn-ion {
+		font-size: 7vw;
+	}
+	.comentarios {
+		width: 100%;
+	}
+	.comentarios button {
+		width: 20%;
+		height: 40%;
+		margin: 0 auto;
+	}
+	.comentarios ion-icon {
+		font-size: 10vw;
+	}
+}

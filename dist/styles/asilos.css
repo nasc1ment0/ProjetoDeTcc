@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap");
+
+.carousel img {
+	display: flex;
+	margin: 0 auto;
+	max-width: 100%;
+	cursor: grab;
+	border-radius: 25px;
+}
+
+.carousel img:active {
+	cursor: grabbing;
+}
+
+.carousel {
+	margin: 50px;
+	max-width: 50vw;
+}
+
+.asilos {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.asilos ul {
+	list-style: none;
+	margin: 20px;
+}
+
+.asilos li {
+	margin: 10px;
+}
+
+.info {
+	max-width: 35%;
+	padding: 15px;
+	margin: 30px auto;
+	flex-flow: column;
+	word-wrap: break-word;
+}
+
+.contato {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 950px) {
+	.asilos {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.info {
+		max-width: 75%;
+	}
+	.carousel img {
+		height: 100%;
+	}
+	.carousel {
+		max-width: 100%;
+	}
+}

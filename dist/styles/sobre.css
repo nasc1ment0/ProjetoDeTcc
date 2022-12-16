@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h1 {
+	font-family: "montserrat", sans-serif;
+	color: #f6f2fd;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: "montserrat", sans-serif;
+	color: #000;
+	font-weight: bold;
+}
+
+.quem-somos ul {
+	list-style: inside disc;
+}
+
+/* COMEÇO PARALLAX */
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+main {
+	display: block;
+	background: #bfe4fc;
+}
+
+.container {
+	font-family: "dm sans", sans-serif;
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.container * {
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+section.module p {
+	margin-bottom: 40px;
+}
+
+section.module:last-child {
+	margin-bottom: 0;
+}
+
+section.module h2 {
+	margin-bottom: 40px;
+	font-size: 30px;
+}
+
+section.module.content {
+	padding: 40px 0;
+	background-color: #bfe4fc;
+}
+
+section.module.parallax {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 90vh !important;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+section.module.parallax::after {
+	content: "";
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	position: absolute;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 250%);
+}
+
+section.module.parallax-1 {
+	background-image: url(../assets/img/idosa.jpg);
+	background-position: 0 -30px;
+}
+
+section.module.parallax-2 {
+	background-image: url(../assets/img/velhos1.jpg);
+}
+
+section.module.parallax h1 {
+	text-align: center;
+	font-size: 70px;
+	z-index: 50;
+	text-transform: uppercase;
+}
+
+.area-1,
+.area-2,
+.area-3,
+.area-4 {
+	visibility: hidden;
+}
+
+/* FIM PARALLAX */
+
+.fotos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.fotos div {
+	display: flex;
+	max-width: 25%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
+
+.fotos div span {
+	display: flex;
+}
+
+.img-pessoas {
+	width: 100%;
+	max-width: 200px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	transition: all 0.3s ease-in-out;
+}
+
+.section-pessoas {
+	padding: 0;
+	margin: 0;
+}
+
+section.module.section-pessoas {
+	padding: 15px 0;
+	margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+	.img-pessoas {
+		max-width: 150px;
+	}
+	.fotos div {
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 420px) {
+	.img-pessoas {
+		max-width: none;
+	}
+	.fotos div {
+		max-width: none;
+	}
+	section.module.parallax-1 {
+		background-color: #309075;
+		background-image: url(../assets/img/idosa.jpg);
+		background-position: -100px 100px;
+		background-repeat: no-repeat;
+	}
+}
