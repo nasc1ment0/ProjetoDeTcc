@@ -1,0 +1,33 @@
+{
+  "name": "safe-rest",
+  "version": "1.0.0",
+  "description": "TCC",
+  "keywords": [
+    "asilos",
+    "residências para terceira idade",
+    "filtro",
+    "casa de repouso",
+    "busca"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jonydu05/Safe-Rest"
+  },
+  "author": "João Cardoso <joaog.zamp@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonydu05/Safe-Rest/issues"
+  },
+  "homepage": "https://github.com/Jonydu05/Safe-Rest#readme",
+  "prettier": {
+    "printWidth": 200,
+    "useTabs": true
+  },
+  "dependencies": {
+    "jquery": "^3.6.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "prettier": "^2.7.1"
+  }
+}
